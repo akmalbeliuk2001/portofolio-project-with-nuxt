@@ -2,7 +2,9 @@
   <div>
     <div class="jumbotron w-full h-screen bg-[#F44F1A] flex items-center">
       <div class="max-w-screen-lg mx-auto">
-        <p class="uppercase text-[76.29px] text-center">
+        <p
+          class="uppercase text-[76.29px] text-center leading-[100%] font-semibold main-poppins"
+        >
           "Do not know, then do not love!"
         </p>
         <svg
@@ -65,5 +67,9 @@
   to {
     transform: rotate(-360deg);
   }
+}
+
+.main-poppins {
+  font-family: "Poppins", sans-serif;
 }
 </style>
