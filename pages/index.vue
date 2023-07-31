@@ -1,14 +1,14 @@
 <template>
   <div>
     <div class="jumbotron w-full h-screen bg-[#F44F1A] flex items-center">
-      <div class="max-w-screen-lg mx-auto">
+      <div class="max-w-screen-lg mx-auto px-[16px] lg:px-0">
         <p
-          class="uppercase text-[76.29px] text-center leading-[100%] font-semibold main-poppins"
+          class="uppercase text-[48.8px] lg:text-[76.29px] text-center leading-[100%] font-semibold font-poppins"
         >
           "Do not know, then do not love!"
         </p>
         <svg
-          class="welcome-decoration w-[159px] h-[159px] mt-8 mx-auto"
+          class="welcome-decoration w-[88px] h-[88px] lg:w-[159px] lg:h-[159px] mt-8 mx-auto"
           viewBox="0 0 162 162"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -48,8 +48,20 @@
         </svg>
       </div>
     </div>
-    <div class="introduction w-full h-screen bg-[#000000]">
-      <div class="max-w-screen-lg mx-auto"></div>
+    <div class="contact w-full h-screen bg-[#000000]">
+      <div
+        class="max-w-screen-lg mx-auto font-poppins uppercase font-semibold bg-[#999]"
+      >
+        <p class="text-[#F44F1A] text-[76.29px] tracking-[-7.629px]">contact</p>
+        <div class="text-[#fff] text-[48.83px] tracking-[-4.883px] mt-[32px]">
+          <div class="border-b-[1px] border-[#fff]">
+            <div>Intagram</div>
+          </div>
+          <div class="border-b-[1px] border-[#fff]">Linkedin</div>
+          <div class="border-b-[1px] border-[#fff]">Github</div>
+          <div class="border-b-[1px] border-[#fff]">Email</div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -69,7 +81,7 @@
   }
 }
 
-.main-poppins {
+.font-poppins {
   font-family: "Poppins", sans-serif;
 }
 </style>
