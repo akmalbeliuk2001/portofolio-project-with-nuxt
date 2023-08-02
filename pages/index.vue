@@ -48,25 +48,46 @@
         </svg>
       </div>
     </div>
-    <div class="contact w-full h-screen bg-[#000000]">
+    <div class="contact w-full h-screen bg-[#000000] flex items-center">
       <div
-        class="max-w-screen-lg mx-auto font-poppins uppercase font-semibold bg-[#999]"
+        class="w-full max-w-screen-lg mx-auto font-poppins uppercase font-semibold px-[16px] lg:px-0"
       >
-        <p class="text-[#F44F1A] text-[76.29px] tracking-[-7.629px]">contact</p>
-        <div class="text-[#fff] text-[48.83px] tracking-[-4.883px] mt-[32px]">
-          <div class="border-b-[1px] border-[#fff]">
-            <div>Intagram</div>
+        <p
+          class="text-[#F44F1A] text-[48.8px] lg:text-[76.29px] tracking-[-7.629px]"
+        >
+          contact
+        </p>
+        <div
+          v-for="(data, index) in dataBotton"
+          :key="index"
+          class="border-b-[1px] border-[#fff] text-[#fff] text-[25px] lg:text-[48.83px] tracking-[-4.883px] mt-[32px]"
+        >
+          <div class="flex items-center justify-between pb-1">
+            <div>{{ data.contact }}</div>
+            <atoms-Button-Contact :src="data.src" />
           </div>
-          <div class="border-b-[1px] border-[#fff]">Linkedin</div>
-          <div class="border-b-[1px] border-[#fff]">Github</div>
-          <div class="border-b-[1px] border-[#fff]">Email</div>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const dataBotton = ref([
+  {
+    contact: "Instagram",
+    src: "https://www.instagram.com/akmal_beliuk/",
+  },
+  {
+    contact: "Linkedin",
+    src: "https://www.linkedin.com/in/muhammad-akmal-beliuk-168068223/",
+  },
+  {
+    contact: "Github",
+    src: "https://github.com/akmalbeliuk2001",
+  },
+]);
+</script>
 
 <style scoped>
 .welcome-decoration {
